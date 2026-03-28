@@ -1,13 +1,13 @@
 function isSameType(value1, value2) {
-  if (Number.isNaN(value1) && Number.isNaN(value2)) {
-    return true;
-  }
-
-  if (Number.isNaN(value1) || Number.isNaN(value2)) {
-    return false;
-  }
-  return typeof value1 === typeof value2;
+	if(value1==NaN&&value2==NaN){
+		return true;
+	}
+  else if(value1==value2){
+	  return true;
 }
+	else{
+		return false;
+	}
 	
 }
 
